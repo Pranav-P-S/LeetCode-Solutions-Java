@@ -1,14 +1,14 @@
-// LeetCode Problem: ContainsDuplicate
+// LeetCode Problem: ContainsDuplicate 217
 // Solution by: @Pranav-P-S
 
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-        HashSet<Integer> num = new HashSet<>();
+        HashSet<Integer> set = new HashSet<>();
             for (int n : nums) {
-                if (num.contains(n)) {
+                if (set.contains(n)) {
                     return true;
             }
-                num.add(n);
+                set.add(n);
         }     
         return false;        
     }
