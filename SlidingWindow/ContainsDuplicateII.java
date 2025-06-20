@@ -1,6 +1,18 @@
-// LeetCode Problem: ContainsDuplicateII
+// LeetCode Problem: ContainsDuplicateII 219
 // Solution by: @Pranav-P-S
 
-public class ContainsDuplicateII {
-    // Your solution here
+class Solution {
+    public boolean containsNearbyDuplicate(int[] nums, int k) {
+        HashSet<Integer> win=new HashSet<>();
+        for(int i=0;i<nums.length;i++){
+            if(win.contains(nums[i])){
+                return true;
+            }
+            win.add(nums[i]);
+            if(win.size()>k){
+                win.remove(nums[i-k]);
+            }
+        }
+        return false;
+    }
 }
