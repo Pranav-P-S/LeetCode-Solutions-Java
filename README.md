@@ -143,6 +143,4 @@ This repository is licensed under **MIT**. Feel free to use the code for learnin
 
 **Happy Coding!** 🚀  
 
-*(Update this README as you add more solutions!)*  
-
 ---
