@@ -16,6 +16,7 @@
  *     }
  * }
  */
+
 class Solution {
     private int maxDiameter = 0;
 
